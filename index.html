@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pong (Not so impressive)</title>
+    <style>
+        #canvas {
+            background-color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        button {
+            font-size: 1.3rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: white;
+            transition: background-color 200ms;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <form>
+        <button type="button" onclick="toggle(true)">Click to Multi</button>
+        <button type="button" onclick="toggle(false)">Click to stop Multi</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
